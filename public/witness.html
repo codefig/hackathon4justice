@@ -60,7 +60,7 @@
     
       var narrative = $('#comment').val();
       $.post({
-        url : "http://localhost:7777/api/submit", 
+        url : "/api/submit", 
         data  : { "comment" : narrative},
         success : function(response){
              window.location.href = "questions.html#mainContent"
