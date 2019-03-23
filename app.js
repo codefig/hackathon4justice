@@ -18,6 +18,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //routes
 app.use('/api', Routes);
 
+app.use('/', express.static('public'));
+
 
 // done! we export it so we can start the site in start.js
 module.exports = app;
